@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>명조 3.6 / 3.7 KOL · 롯데시네마 오프라인 기획안</title>
+<style>
+:root{
+  --bg:#0d1117; --panel:#161b22; --panel2:#1c2230; --line:#2a3140;
+  --txt:#e6edf3; --dim:#b5c0cf; --accent:#4dd6c1; --accent2:#f5a524;
+  --v36:#5b9cf8; --v37:#c084fc; --cine:#f472b6;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--txt);
+  font-family:'Pretendard','Malgun Gothic',-apple-system,sans-serif;
+  line-height:1.7;padding:0 0 80px;
+  word-break:keep-all;overflow-wrap:break-word}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+
+/* ===== 헤더 ===== */
+header.hero{background:linear-gradient(135deg,#0d1117 0%,#1c2740 50%,#0d1117 100%);
+  border-bottom:1px solid var(--line);padding:64px 0 48px;margin-bottom:40px}
+.hero h1{font-size:2.3rem;font-weight:800;letter-spacing:-.5px;
+  margin-bottom:14px;line-height:1.35}
+.hero .sub{color:var(--dim);font-size:1.02rem}
+.hero .meta{margin-top:22px;display:flex;gap:10px;flex-wrap:wrap}
+.tag{display:inline-block;padding:5px 13px;border-radius:20px;font-size:.8rem;
+  font-weight:600;border:1px solid var(--line);background:var(--panel)}
+.tag.v36{color:var(--v36);border-color:#2d4a7a}
+.tag.v37{color:var(--v37);border-color:#5b3a7a}
+.tag.cine{color:var(--cine);border-color:#7a3a5b}
+
+/* ===== 섹션 ===== */
+h2.sec{font-size:1.6rem;font-weight:800;margin:64px 0 8px;
+  padding-bottom:14px;border-bottom:2px solid var(--line);scroll-margin-top:70px}
+h2.sec .num{color:var(--accent);margin-right:10px}
+.sec-desc{color:var(--dim);font-size:.94rem;margin-bottom:28px}
+
+/* ===== 카드 ===== */
+h3.item{font-size:1.26rem;font-weight:700;margin:0 0 4px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;
+  margin-bottom:26px;overflow:hidden}
+.card-head{padding:22px 26px 18px;border-bottom:1px solid var(--line);
+  background:var(--panel2)}
+.card-head .lead{color:var(--dim);font-size:.92rem;margin-top:6px}
+.card-body{padding:24px 26px}
+.grid2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.35fr);
+  gap:24px;align-items:start;margin-bottom:18px}
+
+/* ===== 이미지: 잘림 없이 전체 표시 ===== */
+figure{margin:0 0 18px}
+figure img{width:100%;height:auto;display:block;border-radius:10px;
+  border:1px solid var(--line);background:#0a0e14}
+figcaption{color:var(--dim);font-size:.78rem;margin-top:8px;line-height:1.5}
+
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:.9rem}
+th,td{border:1px solid var(--line);padding:10px 12px;text-align:left;
+  vertical-align:top}
+th{background:var(--panel2);font-weight:700;color:var(--accent)}
+td.k{background:#141a24;font-weight:600;width:120px}
+ul{padding-left:20px;margin:8px 0}
+li{margin-bottom:5px}
+.kicker{font-size:.78rem;font-weight:700;letter-spacing:1px;
+  text-transform:uppercase;color:var(--accent);margin:22px 0 10px;
+  display:block}
+.note{background:#1a2430;border-left:3px solid var(--accent2);
+  padding:13px 16px;border-radius:0 8px 8px 0;margin:16px 0;font-size:.89rem}
+.note strong{color:var(--accent2)}
+.warn{background:#2a1d1d;border-left:3px solid #f87171}
+.warn strong{color:#f87171}
+.callout{background:#141d2b;border-left:3px solid var(--v36);
+  padding:14px 18px;border-radius:0 8px 8px 0;margin:16px 0;font-size:.9rem}
+.callout.blue{border-left-color:var(--accent)}
+.pill{display:inline-block;background:#243044;color:#9ecbff;padding:2px 9px;
+  border-radius:12px;font-size:.78rem;margin:2px 4px 2px 0;font-weight:600}
+.flow{list-style:none;padding:0;counter-reset:s}
+.flow li{counter-increment:s;position:relative;padding:12px 0 12px 46px;
+  border-bottom:1px dashed var(--line)}
+.flow li:last-child{border-bottom:none}
+.flow li::before{content:counter(s);position:absolute;left:0;top:12px;
+  width:28px;height:28px;border-radius:50%;background:var(--accent);
+  color:#07211d;font-weight:800;font-size:.85rem;display:flex;
+  align-items:center;justify-content:center}
+.flow li b{display:block;margin-bottom:2px}
+.flow li span{color:var(--dim);font-size:.88rem}
+.stage{background:#0a0e14;border:1px solid var(--line);border-radius:12px;
+  padding:20px;margin:16px 0}
+.toc{background:var(--panel);border:1px solid var(--line);border-radius:14px;
+  padding:22px 26px;margin-bottom:20px}
+.toc h4{font-size:.95rem;color:var(--accent);margin-bottom:12px}
+.toc ol{padding-left:20px;font-size:.95rem}
+.toc li{margin-bottom:7px}
+.toc a{color:var(--txt);text-decoration:none}
+.toc a:hover{color:var(--accent);text-decoration:underline}
+
+/* ===== 모바일 ===== */
+@media(max-width:820px){
+  .grid2{grid-template-columns:1fr}
+  .wrap{padding:0 16px}
+  .hero h1{font-size:1.7rem}
+  header.hero{padding:44px 0 32px}
+  .card-head,.card-body{padding:18px 16px}
+  table{font-size:.82rem;display:block;overflow-x:auto;white-space:nowrap}
+  td.k{width:auto}
+}
+
+/* ===== 인쇄(Ctrl+P → PDF) ===== */
+@media print{
+  @page{size:A4;margin:12mm}
+  body{background:#fff;padding:0;
+    -webkit-print-color-adjust:exact;print-color-adjust:exact}
+  header.hero{padding:0 0 24px;margin-bottom:24px}
+  .card,figure,table,.callout,.note,.toc{
+    break-inside:avoid;page-break-inside:avoid}
+  figure img{max-height:120mm;object-fit:contain}
+  a{color:inherit;text-decoration:none}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <h1>명조 3.6 / 3.7<br>KOL &amp; 롯데시네마 오프라인 기획안</h1>
+    <p class="sub">브레인스토밍 정리본 · KOL 파트 + 롯데시네마 오프라인 이벤트 파트</p>
+    <div class="meta">
+      <span class="tag v36">3.6 KOL</span>
+      <span class="tag v37">3.7 KOL</span>
+      <span class="tag cine">롯데시네마 3.6 / 3.7</span>
+      <span class="tag">담당: KOL · 오프라인</span>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+<div class="toc">
+  <h4>목차</h4>
+  <ol>
+    <li><a href="#s1">3.6 KOL &mdash; 성우 토크쇼 / 영입회 / 애니메이션 / 델크쇼</a></li>
+    <li><a href="#s2">3.7 KOL &mdash; 띵조를 부탁해 / 다주 본사 방문 / 띵킹2</a></li>
+    <li><a href="#s3">3.6 롯데시네마 오프라인 (확정안 정리)</a></li>
+    <li><a href="#s4">3.7 롯데시네마 오프라인 (신규 제안)</a></li>
+    <li><a href="#s5">종합 타임라인 &amp; 확인 필요 사항</a></li>
+  </ol>
+</div>
+
+<h2 class="sec" id="s1" id="s1"><span class="num">01</span>3.6 KOL &mdash; 콘텐츠 4종 구체화</h2>
+<p class="sec-desc">버전 3.6은 <b>"기존 팬덤 결속 + 라이트 유저 유입"</b>을 동시에 노리는 구성.
+성우 토크쇼(팬덤 심화) → 영입회(신규 유입) → 애니메이션(대중 확산) → 델크쇼(밈 확산)로
+타깃이 점점 넓어지는 퍼널 구조로 설계했습니다.</p>
+
+<!-- ============ 3.6-1 성우 토크쇼 ============ -->
+<div class="card">
+  <div class="card-head">
+    <span class="tag v36">3.6-1</span>
+    <h3 class="item">성우 토크쇼 &mdash; 「목소리의 뒷면」</h3>
+    <p class="lead">캐릭터를 연기한 성우가 직접 나와 녹음 비하인드를 푸는, 팬덤 만족도 최상위 콘텐츠</p>
+  </div>
+  <div class="card-body">
+    <div class="grid2">
+      <figure>
+        <img src="assets/sungwoo.jpg" alt="명조 2주년 페스티벌 성우 토크쇼">
+        <figcaption>레퍼런스 · <b>명조 2주년 페스티벌 성우 토크쇼</b> 하이라이트<br>
+        에이메스 cv 김하루 · 데니아 cv 박시윤 (채널: 블류, 조회 3.8만)<br>
+        youtu.be/E2whROUxDz8 &mdash; <b>실제 진행 실적 보유</b></figcaption>
+      </figure>
+      <div>
+        <span class="kicker">기획 의도</span>
+        <ul>
+          <li><b>2주년 페스티벌에서 이미 검증된 포맷</b> &mdash; 성우 토크쇼 하이라이트 클립이
+          개인 채널에서 3.8만 조회 기록. 반응 데이터가 확보된 상태</li>
+          <li>3.6 신규/메인 공명자 성우를 섭외해 <b>"이 캐릭터를 어떻게 만들었나"</b>를 공개</li>
+          <li>게임 내 정보가 아닌 <b>제작 비하인드</b>라 스포일러 리스크가 낮고 버전 무관하게 소구</li>
+          <li>성우 팬덤 → 게임 유입, 게임 팬덤 → 성우 팬덤의 <b>교차 유입</b> 발생</li>
+          <li>클립 단위 확산성이 매우 높음 (명대사 재연, 성대모사 등)</li>
+        </ul>
+      </div>
+    </div>
+
+    <table>
+      <tr><td class="k">포맷</td><td>온라인 라이브 1회 (약 90~120분) + 하이라이트 VOD 1건</td></tr>
+      <tr><td class="k">출연</td><td>성우 2~3인 + 진행 MC 1인 (명조 이해도 높은 크리에이터)</td></tr>
+      <tr><td class="k">송출</td><td>명조 공식 채널 (치지직) 메인 / MC 개인 채널 동시 송출</td></tr>
+      <tr><td class="k">타깃</td><td>기존 유저 · 성우 팬덤 · 스토리 중심 라이트 유저</td></tr>
+    </table>
+
+    <span class="kicker">코너 구성</span>
+    <ul class="flow">
+      <li><b>오프닝 &mdash; 목소리 블라인드 퀴즈</b>
+        <span>성우가 캐릭터 목소리로 인사 → 시청자가 누구인지 맞히며 시작. 초반 채팅 참여율 확보</span></li>
+      <li><b>1부 &mdash; 캐릭터 해석 토크</b>
+        <span>"이 캐릭터를 어떻게 이해했는가", 감정선 설계, 캐릭터에 대한 성우 본인의 애정 포인트</span></li>
+      <li><b>2부 &mdash; 녹음 부스 비하인드</b>
+        <span>NG 에피소드, 가장 힘들었던 대사, 디렉터 요청 비화. 가능하면 <b>실제 녹음 음원 미공개 테이크 공개</b></span></li>
+      <li><b>3부 &mdash; 명대사 라이브 재연</b>
+        <span>시청자 신청 대사를 현장에서 즉석 연기. <b>클립 확산의 핵심 코너</b></span></li>
+      <li><b>4부 &mdash; 실시간 Q&amp;A</b>
+        <span>사전 접수 + 실시간 채팅 질문. 답변자에게 굿즈/사인 증정</span></li>
+      <li><b>엔딩 &mdash; 3.7 예고 멘트</b>
+        <span>다음 버전 티저 멘트를 성우 목소리로 녹음해 마무리 → 차기 버전 기대감 연결</span></li>
+    </ul>
+
+    <div class="note"><strong>확인 필요</strong> &mdash; 성우 섭외는 리드타임이 가장 길다.
+    소속사 스케줄 · 초상권/음원 사용 범위 · 재연 가능 대사 범위를 <b>최소 6~8주 전</b> 확정 필요.
+    미공개 테이크 공개 여부는 개발사(쿠로) 승인 필수.</div>
+  </div>
+</div>
+
+<!-- ============ 3.6-2 영입회 ============ -->
+<div class="card">
+  <div class="card-head">
+    <span class="tag v36">3.6-2</span>
+    <h3 class="item">영입회 &mdash; 「명조 영업 브리핑」</h3>
+    <p class="lead">명조를 안 하는 크리에이터/시청자를 대상으로 한, 웃기고 뜨거운 &lsquo;게임 영업&rsquo; 콘텐츠</p>
+  </div>
+  <div class="card-body">
+    <div class="grid2">
+      <figure>
+        <img src="assets/youngip_tamtam.jpg" alt="영입회 레퍼런스 - 탬탬버린 영업 방송">
+        <figcaption>레퍼런스 · 탬탬버린 「아니 영업을 하라니까 왜 님들이 감동하고 있는거냐고」<br>
+        (youtu.be/J45wT1il29U) &mdash; 영업 포맷의 정서적 몰입 사례</figcaption>
+      </figure>
+      <div>
+        <span class="kicker">기획 의도</span>
+        <ul>
+          <li>기존 유저 대상 콘텐츠와 달리 <b>명조를 모르는 사람</b>을 정조준하는 유일한 축</li>
+          <li>레퍼런스처럼 <b>"웃기려고 시작했는데 진심이 되는"</b> 구조가 전환율이 가장 높음</li>
+          <li>진입장벽(전투 어렵다, 스토리 길다)에 대한 <b>선제적 방어</b> 논리 제공</li>
+          <li>영업 당하는 게스트의 리액션 자체가 콘텐츠 &mdash; 게임 실플레이 없이도 성립</li>
+        </ul>
+      </div>
+    </div>
+
+    <table>
+      <tr><td class="k">포맷</td><td>온라인 라이브 1회 (약 120분), PPT 발표 배틀 형식</td></tr>
+      <tr><td class="k">출연</td><td>영업자(명조 헤비 유저) 2~3인 + 피영업자(비유저·복귀 유저) 2~3인</td></tr>
+      <tr><td class="k">캐스팅</td><td>영업자 &mdash; 명조 이해도 최상위 / 피영업자 &mdash; <b>타 게임 팬덤 보유</b> 크리에이터</td></tr>
+      <tr><td class="k">핵심 KPI</td><td>방송 중/후 <b>신규 가입 쿠폰 코드 사용률</b>로 전환 측정</td></tr>
+    </table>
+
+    <span class="kicker">코너 구성</span>
+    <ul class="flow">
+      <li><b>1라운드 &mdash; 3분 PPT 영업전</b>
+        <span>영업자가 직접 만든 PPT로 "명조를 해야 하는 이유" 발표. 진지 + 드립 혼합이 핵심</span></li>
+      <li><b>2라운드 &mdash; 편견 격파</b>
+        <span>"전투 어렵지 않아?" "지금 시작하면 늦지 않아?" 등 실제 커뮤니티 반응을 반박.
+        <b>신규 유저 온보딩 정보를 자연스럽게 노출</b>하는 구간</span></li>
+      <li><b>3라운드 &mdash; 현장 체험</b>
+        <span>피영업자가 즉석에서 계정 생성 → 튜토리얼~첫 전투 플레이. 실제 첫인상 리액션 확보</span></li>
+      <li><b>4라운드 &mdash; 스토리 한 장면 감상</b>
+        <span>스포일러 없는 명장면 1개를 함께 시청. 레퍼런스의 "감동" 지점을 의도적으로 설계</span></li>
+      <li><b>최종 &mdash; 영입 판정 &amp; 계약서 사인</b>
+        <span>피영업자가 "영입 수락/거절" 선언. 수락 시 <b>대형 영입 계약서 퍼포먼스</b> → 짤 생성</span></li>
+    </ul>
+
+    <div class="note"><strong>확산 설계</strong> &mdash; 피영업자의 &ldquo;계약&rdquo; 이후
+    <b>1~2주 뒤 후속 플레이 방송</b>을 세트로 계약할 것. 영입회 단발로 끝나면 전환이 휘발된다.
+    "정말 하고 있는지" 확인하는 <b>애프터 체크 방송</b>이 실제 리텐션을 만든다.</div>
+  </div>
+</div>
+
+<!-- ============ 3.6-3 애니메이션 ============ -->
+<div class="card">
+  <div class="card-head">
+    <span class="tag v36">3.6-3</span>
+    <h3 class="item">애니메이션 &mdash; 「청초의 제자」 (가제)</h3>
+    <p class="lead">픽셀 멤버 5인이 <b>3.6 신규 공명자 청초의 제자가 되기 위해 고군분투</b>하는
+    오리지널 2D 애니메이션 제작. 기존 영상 재활용이 아닌 <b>신규 IP 콘텐츠 자체 생산</b></p>
+  </div>
+  <div class="card-body">
+    <div class="grid2">
+      <figure>
+        <img src="assets/pixel_anim.jpg" alt="픽셀 애니메이션 레퍼런스">
+        <figcaption>레퍼런스 · 픽셀 「골랐다」 (youtu.be/FHcuWWl3wwM)<br>
+        채널 픽셀 @PixelNetwork_KR &mdash; 2~3등신 치비 + 플랫 컬러 화풍<br>
+        <b>※ 썸네일 480×360만 존재</b> (maxres 없음) &mdash; 실제 사용 시 원본 프레임 확보 필요</figcaption>
+      </figure>
+      <div>
+        <span class="kicker">기획 의도</span>
+        <ul>
+          <li><b>픽셀은 이미 「@애니메이션」 시리즈를 자체 운영 중</b> &mdash;
+          「새로운 일본인 친구」 「스카이다이빙」 등. 포맷·제작 파이프라인이 검증된 상태</li>
+          <li>멤버 캐릭터화가 이미 정착되어 <b>시청자가 캐릭터를 인지한 상태에서 시작</b></li>
+          <li>게임 플레이 영상이 아니므로 <b>미설치자도 진입장벽 없이 소비 가능</b></li>
+          <li>청초의 <b>심검(이기어검) 검술</b>이라는 시각적 강점을 애니메이션으로 극대화</li>
+          <li>완성된 애니메이션은 <b>영구 자산</b> &mdash; 오프라인 행사 상영, 굿즈, 2차 활용</li>
+        </ul>
+      </div>
+    </div>
+
+    <table>
+      <tr><td class="k">출연</td><td><b>픽셀 멤버 5인</b> &mdash; 남봉 · 임나은 · 연비니 · 금사향 · 설백</td></tr>
+      <tr><td class="k">소재</td><td>3.6 신규 공명자 <b>청초</b> (심검 사용 검술 캐릭터)</td></tr>
+      <tr><td class="k">줄거리</td><td>픽셀 멤버들이 청초의 제자가 되기 위해 각자의 방식으로 노력하는 과정</td></tr>
+      <tr><td class="k">화풍</td><td>2~3등신 치비 + 굵은 라인아트 + 플랫 컬러 (픽셀 기존 애니 시리즈 톤 유지)</td></tr>
+      <tr><td class="k">분량</td><td>3~5분 1편 (기존 「@애니메이션」 시리즈가 3분 내외)</td></tr>
+      <tr><td class="k">송출</td><td>픽셀 채널 메인 업로드 + 명조 공식 채널 리포스트</td></tr>
+    </table>
+
+    <span class="kicker">구성안 &mdash; 5인 5색 &ldquo;제자 지원&rdquo; 구조</span>
+    <ul class="flow">
+      <li><b>도입 &mdash; 청초 등장</b>
+        <span>청초가 심검을 다루는 압도적인 장면 목격 → 픽셀 멤버 5인이 동시에
+        &ldquo;제자로 삼아주세요&rdquo; 선언. 명조 세계관 진입</span></li>
+      <li><b>전개 &mdash; 멤버별 어필 (핵심 코미디 구간)</b>
+        <span>5인이 각자 다른 방식으로 제자 지원.
+        <b>멤버별 개그 캐릭터성을 그대로 활용해</b> 각 팬덤이 자기 최애 구간을
+        클립으로 잘라 확산하는 구조</span></li>
+      <li><b>위기 &mdash; 전원 탈락 위기</b>
+        <span>제각각 헛발질 → 청초의 냉담한 반응. 명조 세계관의 실제 설정
+        (심검 수련 난이도)을 코미디 소재로 소화</span></li>
+      <li><b>결말 &mdash; 반전</b>
+        <span>예상 밖 멤버가 인정받거나, 5인이 협력해 통과. 3.6 버전 플레이 유도 멘트로 마무리</span></li>
+    </ul>
+
+    <span class="kicker">멤버별 어필 방식 (안) &mdash; 5인 5색</span>
+    <table>
+      <tr><th>멤버</th><th>제자 지원 방식 (안)</th><th>기대 포인트</th></tr>
+      <tr><td class="k">남봉</td><td>정공법 &mdash; 실제로 검술을 파고들어 가장 진지하게 수련</td>
+        <td>띵킹 띵티어 캐스팅과 연결되는 &ldquo;실력파&rdquo; 포지션</td></tr>
+      <tr><td class="k">임나은</td><td>아부·아첨형 &mdash; 청초 찬양으로 환심 사기 시도</td>
+        <td>대사량 많은 코미디 구간, 클립 확산 최적</td></tr>
+      <tr><td class="k">연비니</td><td>모방형 &mdash; 청초 말투·복장·자세를 그대로 따라함</td>
+        <td>코스프레 &middot; 2차 창작 유도</td></tr>
+      <tr><td class="k">금사향</td><td>정면 돌파 &mdash; 대련 신청 후 순식간에 패배</td>
+        <td>심검 액션 작화를 보여주는 구간</td></tr>
+      <tr><td class="k">설백</td><td>의외의 재능 &mdash; 무심하게 따라했는데 성공</td>
+        <td>결말 반전 담당 &mdash; 마지막 한 방</td></tr>
+    </table>
+    <p class="note">※ 멤버별 실제 캐릭터성은 픽셀 측과 협의 후 확정. 위는 배치 구조 예시안입니다.</p>
+
+    <div class="callout">
+      <b>확인 필요 &mdash; 3.5 / 3.6 버전 귀속</b><br>
+      요청 시 <b>&ldquo;3.5-3&rdquo;</b>으로 언급되었으나 청초는 <b>3.6 신규 공명자</b>입니다
+      (3.5 스토리 컷씬에 선행 등장). 본 문서는 3.6-3으로 배치했으니
+      3.5 항목이 맞다면 알려주시면 이동하겠습니다.
+    </div>
+
+    <div class="callout blue">
+      <b>제작 리드타임 &mdash; 최우선 발주 항목</b><br>
+      3~5분 2D 애니메이션은 <b>기획 → 콘티 → 작화 → 편집에 통상 6~10주</b> 소요됩니다.
+      버전 업데이트 D-7 공개를 목표로 한다면 <b>지금 시점에 발주가 시작되어야</b> 합니다.
+      청초 공식 3D 모델링·설정화의 사전 제공 여부도 함께 확인이 필요합니다.
+    </div>
+  </div>
+</div>
+
+<!-- ============ 3.6-4 델크쇼 ============ -->
+<div class="card">
+  <div class="card-head">
+    <span class="tag v36">3.6-4</span>
+    <h3 class="item">델크쇼 &mdash; 「명조편 시즌2」</h3>
+    <p class="lead">기존 인기 토크쇼 포맷에 명조를 얹는 방식. 이미 검증된 재미 &mdash; 리스크가 가장 낮은 카드</p>
+  </div>
+  <div class="card-body">
+    <div class="grid2">
+      <figure>
+        <img src="assets/delkshow.jpg" alt="델크쇼 명조편 레퍼런스">
+        <figcaption>레퍼런스 · 델롱락국 「델크쇼 명조편 w.러꾸, 앙보, 마레플로스」<br>
+        youtu.be/YxPgWtUWfKs &mdash; <b>기 진행된 명조편 실적 보유</b></figcaption>
+      </figure>
+      <div>
+        <span class="kicker">기획 의도</span>
+        <ul>
+          <li><b>이미 명조편을 진행한 실적</b>이 있어 반응 데이터가 확보된 상태 &mdash; 예측 가능성 최고</li>
+          <li>토크쇼 고정 시청층에게 <b>정기적으로 명조가 노출</b>되는 구조 (브랜드 잔상 효과)</li>
+          <li>게임 플레이 실력과 무관해 <b>출연 크리에이터 폭이 가장 넓음</b></li>
+          <li>드립 · 밈 생산량이 많아 <b>커뮤니티 확산 효율</b>이 높음</li>
+        </ul>
+      </div>
+    </div>
+
+    <table>
+      <tr><td class="k">포맷</td><td>토크쇼 1회 (약 120~150분) + 클립 3~5건</td></tr>
+      <tr><td class="k">출연</td><td>호스트 1인 + 게스트 3~4인 (명조 크리에이터 + 외부 게스트 혼합)</td></tr>
+      <tr><td class="k">차별점</td><td>1회차 대비 <b>3.6 신규 콘텐츠 기반 코너</b>를 신설해 반복감 제거</td></tr>
+      <tr><td class="k">타깃</td><td>토크쇼 고정 시청층 · 라이트 유저 · 커뮤니티 유저</td></tr>
+    </table>
+
+    <span class="kicker">시즌2 신설 코너 제안</span>
+    <ul class="flow">
+      <li><b>명조 인간관계도 그리기</b>
+        <span>게스트가 기억나는 대로 캐릭터 관계도를 그림 → 정답과 비교. 오답이 곧 재미</span></li>
+      <li><b>내 최애 변호하기</b>
+        <span>각자 최애 공명자를 데려와 변호. 다른 게스트가 반박 → 팬덤 화력 유도</span></li>
+      <li><b>3.6 신규 콘텐츠 초면 체험</b>
+        <span>신규 콘텐츠를 방송 중 처음 접하고 리액션. <b>버전 홍보의 실질 축</b></span></li>
+      <li><b>명조 아무말 대잔치 (밈 코너)</b>
+        <span>커뮤니티 밈/짤을 보고 해설. 클립 확산량이 가장 큰 구간</span></li>
+      <li><b>엔딩 &mdash; 시청자 사연 &amp; 굿즈 추첨</b>
+        <span>사연 채택자에게 3.6 콜라보 굿즈 증정 → 참여 동기 부여</span></li>
+    </ul>
+
+    <div class="note"><strong>제안</strong> &mdash; 델크쇼는
+    <b>영입회 직후 배치</b>하는 것이 효율적이다. 영입회로 유입된 신규 유저가
+    "이 게임 커뮤니티 분위기가 이렇구나"를 체감하는 <b>정착 콘텐츠</b> 역할을 하기 때문.</div>
+  </div>
+</div>
+
+<div class="stage">
+  <span class="kicker">3.6 KOL &mdash; 배치 순서 제안</span>
+  <table>
+    <tr><th>순서</th><th>콘텐츠</th><th>시점</th><th>목적</th><th>주 타깃</th></tr>
+    <tr><td>①</td><td>애니메이션 리액션</td><td>버전 업데이트 D-7 ~ D-DAY</td>
+        <td>버전 인지도 최대 확산</td><td>비유저 · 애니 시청층</td></tr>
+    <tr><td>②</td><td>영입회</td><td>업데이트 직후 (D+3 ~ D+7)</td>
+        <td>신규 유입 전환</td><td>비유저 · 복귀 유저</td></tr>
+    <tr><td>③</td><td>성우 토크쇼</td><td>버전 중반 (D+10 ~ D+14)</td>
+        <td>기존 팬덤 만족 · 이탈 방어</td><td>기존 유저 · 성우 팬덤</td></tr>
+    <tr><td>④</td><td>델크쇼</td><td>버전 중후반 (D+14 ~ D+21)</td>
+        <td>신규 유저 정착 · 밈 확산</td><td>라이트 · 커뮤니티 유저</td></tr>
+  </table>
+  <p style="color:var(--dim);font-size:.88rem;margin-top:10px">
+  ※ 콘텐츠 공백기(버전 후반)를 <b>3.7 띵킹2</b>가 이어받는 구조로 연결.</p>
+</div>
+
+<h2 class="sec" id="s2" id="s2"><span class="num">02</span>3.7 KOL &mdash; 콘텐츠 3종 구체화</h2>
+<p class="sec-desc">3.7은 <b>"제작 과정 공개 + 크리에이터 심화 협업"</b>이 축.
+드로잉(제작 감성) → 본사 방문(개발사 신뢰) → 띵킹2(경쟁 화력)로,
+버전 초반·중반·후반을 각각 담당하는 3단 구성입니다.</p>
+
+<!-- ============ 3.7-1 띵조를 부탁해 ============ -->
+<div class="card">
+  <div class="card-head">
+    <span class="tag v37">3.7-1</span>
+    <h3 class="item">띵조를 부탁해 &mdash; 드로잉 키친</h3>
+    <p class="lead">「냉장고를 부탁해」 패러디 &mdash; 랜덤 재료(룰렛)로 즉석 캐릭터 일러스트 대결</p>
+  </div>
+  <div class="card-body">
+    <div class="grid2">
+      <figure>
+        <img src="assets/offline_stage.jpg" alt="명조 오프라인 무대 퀴즈 진행">
+        <figcaption>레퍼런스 · 명조 오프라인 행사 무대 (LED 스크린 퀴즈 진행 장면)<br>
+        (운영기획안 260724 수록) &mdash; 스크린 활용 참여형 코너 참고안</figcaption>
+      </figure>
+      <div>
+        <span class="kicker">기획 의도</span>
+        <ul>
+          <li>일러스트 제작 과정 자체가 <b>시청 지속시간이 매우 긴</b> 콘텐츠 (완성될 때까지 이탈 안 함)</li>
+          <li>시청자가 <b>&lsquo;히든 재료&rsquo;로 직접 개입</b>하므로 참여형 설계가 자연스러움</li>
+          <li>결과물(일러스트)이 <b>그대로 굿즈·SNS 자산</b>이 됨 &mdash; 콘텐츠 1개로 산출물 2개</li>
+          <li>전투 실력 무관 &mdash; 라이트 유저·비유저도 편하게 시청 가능</li>
+        </ul>
+      </div>
+    </div>
+
+    <table>
+      <tr><td class="k">콘텐츠명</td><td>명조 드로잉 키친 (냉장고를 부탁해 패러디)</td></tr>
+      <tr><td class="k">출연</td><td>진행 MC 2인 (명조 크리에이터) + 셰프 2인 (일러스트 작가)</td></tr>
+      <tr><td class="k">온라인안</td><td>각 크리에이터 채널 동시 송출 / 디스코드 화면공유 활용</td></tr>
+      <tr><td class="k">오프라인안</td><td>LED 3면 + 카메라 3대 + 지미집, 드로잉 테이블·태블릿 세팅</td></tr>
+      <tr><td class="k">제한시간</td><td>드로잉 10분 / 5~7분 경과 시 히든 재료 투입</td></tr>
+    </table>
+
+    <span class="kicker">진행 플로우</span>
+    <ul class="flow">
+      <li><b>냉장고 선택 &amp; 룰렛</b>
+        <span>캐릭터 → 상황 → 감정 → 행동 순으로 룰렛 4연속.
+        <br>예) <span class="pill">치샤</span> + <span class="pill">친구와 싸운 뒤</span>
+        + <span class="pill">기쁜</span> + <span class="pill">물구나무 서기</span></span></li>
+      <li><b>드로잉 대결 (10분)</b>
+        <span>일러스트 작가 2인이 동시 작업. MC가 타이머 노출 및 중계 진행</span></li>
+      <li><b>히든 재료 투입 (5~7분 시점)</b>
+        <span>시청자가 채팅/구글폼으로 키워드 제출 → 랜덤 추첨 → 작가가 그림에 즉석 반영.
+        <b>가장 큰 웃음 포인트이자 참여 유도 구간</b></span></li>
+      <li><b>평가 &amp; 투표</b>
+        <span>MC 평가 후 시청자·크리에이터 투표로 우승작 선정</span></li>
+      <li><b>결과물 활용</b>
+        <span>완성 일러스트를 굿즈(아크릴/엽서)로 제작 → <b>롯데시네마 오프라인 증정품으로 연계</b></span></li>
+    </ul>
+
+    <div class="note"><strong>연계 포인트</strong> &mdash; 온라인 드로잉 키친에서 나온 우승작을
+    <b>롯데시네마 3.7 현장 굿즈</b>로 제작하면, 온라인 참여자가 오프라인 행사에 오는 동기가 생긴다.
+    "내가 낸 히든 재료가 들어간 그림이 굿즈가 됐다"는 서사가 강력함.</div>
+  </div>
+</div>
+
+<!-- ============ 3.7-2 다주 본사 방문 ============ -->
+<div class="card">
+  <div class="card-head">
+    <span class="tag v37">3.7-2</span>
+    <h3 class="item">다주 본사 방문 &mdash; 「너명해 &amp; 본사 출장」</h3>
+    <p class="lead">크리에이터가 직접 기획·제안한 콘텐츠. 온라인 토크쇼(1부) → 쿠로게임즈 본사 방문(2부) 2단 구성</p>
+  </div>
+  <div class="card-body">
+    <div class="grid2">
+      <figure>
+        <img src="assets/kuro_hq.jpg" alt="쿠로게임즈 본사 방문 레퍼런스">
+        <figcaption>레퍼런스 · [명조] <b>쿠로게임즈 본사 초청 방문 후기, 3.0 사전체험 행사</b><br>
+        채널: 박서림 · youtu.be/PYZPlDI2Qh4</figcaption>
+      </figure>
+      <div>
+        <span class="kicker">기획 의도</span>
+        <ul>
+          <li>크리에이터 <b>본인이 기획한 콘텐츠</b>라 진정성·몰입도가 다름 (광고 티가 안 남)</li>
+          <li>명조 유지 크리에이터 + <b>복귀 크리에이터</b> 조합 → 휴면 유저 재유입 직접 겨냥</li>
+          <li>본사 방문은 <b>개발사에 대한 신뢰</b>를 만드는 콘텐츠 &mdash; 장기 리텐션에 기여</li>
+          <li>시청자 질문을 개발 총괄에게 전달하는 구조 = <b>유저 소통 이슈 선제 대응</b></li>
+        </ul>
+      </div>
+    </div>
+
+    <table>
+      <tr><th>구분</th><th>1부 · 온라인</th><th>2부 · 오프라인</th></tr>
+      <tr><td class="k">콘텐츠명</td><td>너만의 명조를 해 (너명해)</td><td>명조 중국 본사 방문 Vlog</td></tr>
+      <tr><td class="k">형태</td><td>합방 토크쇼 (라이브)</td><td>영상 촬영 후 VOD 제작 (라이브 없음)</td></tr>
+      <tr><td class="k">컨셉</td><td>명조 TF팀 사내 회의</td><td>명조 TF팀 해외 출장</td></tr>
+      <tr><td class="k">출연</td><td colspan="2">팀장 <b>다주</b> / 선임 <b>서넹</b> / 신입 <b>채현찌</b> + 추가 인원</td></tr>
+      <tr><td class="k">송출</td><td colspan="2">참여 크리에이터 치지직 채널 / 유튜브 VOD</td></tr>
+    </table>
+
+    <span class="kicker">1부 &mdash; 너명해 토크 주제</span>
+    <table>
+      <tr><th>No</th><th>토크 주제</th><th>주제 의도</th></tr>
+      <tr><td>1</td><td>명조의 정실(최애) 캐릭터는?</td><td>캐릭터 선호도 비교 · 팬덤 과몰입 토론</td></tr>
+      <tr><td>2</td><td>명조 내 외모 순위 TOP3</td><td>그래픽 · 비주얼 매력 조명</td></tr>
+      <tr><td>3</td><td>여랑자 vs 남랑자</td><td>플레이 취향 비교</td></tr>
+      <tr><td>4</td><td>세계관 속 가장 불쌍한 캐릭터</td><td>캐릭터 · 스토리 흥미 유발</td></tr>
+      <tr><td>5</td><td>명조 내 비호감 순위 TOP3</td><td>캐릭터 · 스토리 흥미 유발</td></tr>
+      <tr><td>6</td><td>가장 좋아하는 지역 / 스토리</td><td>스토리 흥미 유발</td></tr>
+    </table>
+    <p style="color:var(--dim);font-size:.88rem">
+    ※ 콘텐츠 후반부에 <b>본사에 들고 갈 최종 안건</b>을 시청자와 함께 작성하며 마무리 → 2부로 연결</p>
+
+    <span class="kicker">2부 &mdash; 본사 방문 구성</span>
+    <ul class="flow">
+      <li><b>개발 총괄 인터뷰</b>
+        <span>시청자와 함께 작성한 최종 안건을 들고 미팅 진행. <b>콘텐츠의 클라이맥스</b></span></li>
+      <li><b>실무 공간 탐방</b>
+        <span>3D 모델링 공간, 녹음실 등 개발 현장 체험 &mdash; 성우 토크쇼와 소재 연결 가능</span></li>
+      <li><b>굿즈샵 방문</b>
+        <span>출장 기념 굿즈 탐방. 한국 미출시 굿즈 노출 시 화제성 확보</span></li>
+    </ul>
+
+    <div class="note warn"><strong>리스크 관리</strong> &mdash; 해외 촬영은
+    <b>비자 · 촬영 허가 · 보안 구역 구분</b>이 필수 선결 과제.
+    개발 총괄 인터뷰는 답변 가능 범위를 사전 협의하지 않으면 편집 리스크가 크다.
+    <b>사전 질문 리스트 승인 프로세스</b>를 반드시 넣을 것.</div>
+  </div>
+</div>
+
+<!-- ============ 3.7-3 띵킹2 ============ -->
+<div class="card">
+  <div class="card-head">
+    <span class="tag v37">3.7-3</span>
+    <h3 class="item">띵킹 &mdash; 「명조의 킹을 가려라 2」</h3>
+    <p class="lead">버전 후반부 콘텐츠 공백기를 메우는 대규모 대회. 액션성·엔드콘텐츠를 정면으로 보여주는 축</p>
+  </div>
+  <div class="card-body">
+    <div class="grid2">
+      <figure>
+        <img src="assets/ddingking.jpg" alt="띵킹 1회차 하이라이트">
+        <figcaption>레퍼런스 · 국내 최초 명조대회 「띵킹」 하이라이트 (채널: 명떡)<br>
+        youtu.be/2b0mlTRKJjM · 조회 2.6만 &mdash; <b>재진행 문의 다수 발생</b></figcaption>
+      </figure>
+      <div>
+        <span class="kicker">기획 의도</span>
+        <ul>
+          <li>버전 후반부는 <b>스토리 빌드업 공백기</b> &mdash; 이탈 방지용 콘텐츠가 반드시 필요</li>
+          <li>공명자·전용무기 <b>다중 돌파의 필요성과 효과</b>를 자연스럽게 시연 (과금 소구)</li>
+          <li>1회차에서 기존 유저·참가 크리에이터 <b>모두에게 호평</b>, 재진행 문의 발생</li>
+          <li>3.7 핵심 콘텐츠인 <b>홀로그램 전략 + 종말 매트릭스</b>를 대회 종목으로 직접 활용</li>
+        </ul>
+      </div>
+    </div>
+
+    <table>
+      <tr><td class="k">컨셉</td><td>명조 특유의 전투 시스템과 공명자 이해도를 활용한 <b>전략형 경쟁 대회</b></td></tr>
+      <tr><td class="k">중계진</td><td>3인 &mdash; 박동민, 앙리형, 황블린 (<b>1회차 중계진 유지</b>로 통일성 확보)</td></tr>
+      <tr><td class="k">참가자</td><td>5~6팀 × 3인 = 최대 18인</td></tr>
+      <tr><td class="k">팀 구성</td><td>팀장 1인 + 띵티어 1인 + 킹티어 1인</td></tr>
+      <tr><td class="k">방송</td><td>공식 방송 2회 (DAY1 팀 선정 2시간 / DAY2 본선 3시간)</td></tr>
+      <tr><td class="k">예상 뷰어십</td><td>ACCU 16,400 / PCCU 24,000 (6팀 18인 기준, 공식+참가자 합산)</td></tr>
+    </table>
+
+    <span class="kicker">티어별 캐스팅 기준</span>
+    <table>
+      <tr><th>역할</th><th>출연자(안)</th><th>기준</th></tr>
+      <tr><td><b>팀장</b></td><td>명떡, 고뇨, 매드라이프, 닝냉뇽 등 5~6인</td>
+          <td>최상위 난이도 콘텐츠 클리어 경험 보유</td></tr>
+      <tr><td><b>띵티어</b></td><td>박서림, 김츠유, 관종대왕, 남봉 등 5~6인</td>
+          <td>전투 콘텐츠를 자주 플레이하는 스트리머</td></tr>
+      <tr><td><b>킹티어</b></td><td>아라하시 타비, 유즈하 리코, 초승달, 탬탬버린 등 5~6인</td>
+          <td>전투 콘텐츠에 익숙하지 않은 스트리머</td></tr>
+    </table>
+    <p style="color:var(--dim);font-size:.88rem">
+    ※ 킹티어에 <b>탬탬버린</b>이 포함 &mdash; 3.6 영입회 출연자와 겹치면
+    "영업당해서 대회까지 나왔다"는 <b>서사 연결</b>이 가능. 캐스팅 시 의도적으로 활용 권장.</p>
+
+    <span class="kicker">진행 구성</span>
+    <ul class="flow">
+      <li><b>DAY 1 &mdash; 팀 선정 Day (약 2시간)</b>
+        <span>① 참가자 자유 도전 쇼케이스 (홀로그램 전략 한정)<br>
+        ② 팀장 6단계 홀로그램 전략 기록전 → 클리어타임으로 드래프트 순서 결정<br>
+        ③ 팀 드래프트 → ④ 팀별 본선 각오 인터뷰</span></li>
+      <li><b>DAY 2 &mdash; 본선 (약 3시간)</b>
+        <span>티어별 공명체인 제한 적용 → 스펙 차이를 줄이고 <b>숙련도·이해도</b>가 드러나게 설계</span></li>
+      <li><b>본선 종목 ① 홀로그램 전략</b>
+        <span>도전 단계 · 클리어 여부 · 클리어타임 기준 배점. 6단계 도전 시 추가점수</span></li>
+      <li><b>본선 종목 ② 종말 매트릭스</b>
+        <span><b>메인 라운드.</b> 높은 배점으로 후반 역전 가능성 확보</span></li>
+      <li><b>본선 종목 ③ 버전 이벤트 콘텐츠</b>
+        <span>3.7 신규 협동 콘텐츠·이벤트 스테이지 활용. 신규 공명자/기믹 사용 시 추가점수</span></li>
+      <li><b>최종 점수 발표 &amp; MVP 선정</b>
+        <span>우승 600만원 / 준우승 300만원 / MVP 100만원</span></li>
+    </ul>
+
+    <div class="note"><strong>참고</strong> &mdash; &lsquo;튜닝&rsquo; 콘텐츠는
+    분량·화면 구성을 고려해 금번 과업에서 배제. 진행이 필요할 경우 <b>별도 사전 콘텐츠</b>로 분리 진행 권장.</div>
+  </div>
+</div>
+
+<div class="stage">
+  <span class="kicker">3.7 KOL &mdash; 배치 순서 제안</span>
+  <table>
+    <tr><th>순서</th><th>콘텐츠</th><th>시점</th><th>목적</th></tr>
+    <tr><td>①</td><td>너명해 (온라인 토크쇼)</td><td>버전 초반 (D-7 ~ D+3)</td>
+        <td>복귀 유저 재유입 · 본사 방문 빌드업</td></tr>
+    <tr><td>②</td><td>띵조를 부탁해 (드로잉 키친)</td><td>버전 초반~중반 (D+3 ~ D+10)</td>
+        <td>라이트 유저 소구 · 굿즈 자산 확보</td></tr>
+    <tr><td>③</td><td>본사 방문 Vlog</td><td>버전 중반 (D+10 ~ D+17)</td>
+        <td>개발사 신뢰 형성 · 장기 리텐션</td></tr>
+    <tr><td>④</td><td>띵킹2 (대회)</td><td>버전 후반 (D+21 ~ )</td>
+        <td>콘텐츠 공백기 방어 · 엔드콘텐츠 소구</td></tr>
+  </table>
+  <p style="color:var(--dim);font-size:.88rem;margin-top:10px">
+  ※ <b>롯데시네마 오프라인 행사</b>는 3.7 라이브 방송일에 맞춰 별도 배치 (아래 04 섹션).</p>
+</div>
+
+<h2 class="sec" id="s3" id="s3"><span class="num">03</span>3.6 롯데시네마 &mdash; 오프라인 이벤트 (확정안 정리)</h2>
+<p class="sec-desc">명조 관계자와 함께 3.7 버전 라이브를 단체 관람하고, 사인회 · 코스어 · 인형탈 ·
+성우 토크쇼 · 럭키드로우 · 굿즈 증정을 결합한 <b>Before / LIVE / After</b> 3단 구성.</p>
+
+<div class="card">
+  <div class="card-head">
+    <span class="tag cine">3.6 CINEMA</span>
+    <h3 class="item">명조 X 롯데시네마 &mdash; before LIVE, after LIVE</h3>
+    <p class="lead">3개관 동시 오픈 · 로테이션 방식 운영</p>
+  </div>
+  <div class="card-body">
+    <div class="grid2">
+      <figure>
+        <img src="assets/cinema_event.jpg" alt="극장 내 토크쇼 무대 레퍼런스">
+        <figcaption>레퍼런스 · 실내 홀 대형 스크린 + 토크쇼 무대 세팅<br>
+        (운영기획안 260724 수록 이미지) &mdash; AFTER LIVE 성우 토크쇼 무대 참고안</figcaption>
+      </figure>
+      <div>
+        <span class="kicker">행사 개요</span>
+        <table>
+          <tr><td class="k">행사명</td><td>명조 X 롯데시네마 콜라보 &mdash; before LIVE, after LIVE</td></tr>
+          <tr><td class="k">장소</td><td>롯데시네마 월드타워점<br>(서울 송파구 올림픽로 300, 롯데월드몰 5-11층)</td></tr>
+          <tr><td class="k">일시</td><td>26/09/19</td></tr>
+          <tr><td class="k">규모</td><td>3개관 × 300석 = <b>900명</b> / 운영시간 140분</td></tr>
+          <tr><td class="k">예약</td><td>네이버 예약 시스템 활용</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <span class="kicker">전체 타임테이블</span>
+    <table>
+      <tr><th>구분</th><th>프로그램</th><th>소요시간</th><th>비고</th></tr>
+      <tr><td rowspan="3"><b>BEFORE LIVE</b></td><td>웰컴 메시지 (영상 루프)</td><td>20분</td>
+          <td rowspan="2">전관 동시 송출</td></tr>
+      <tr><td>사전투표 / 설문조사</td><td>동시 진행</td></tr>
+      <tr><td>카운트다운</td><td>10초</td><td>전체 카운트다운</td></tr>
+      <tr><td><b>LIVE</b></td><td>3.7 업데이트 라이브 단체관람</td><td>60분</td>
+          <td>실제 라이브에 맞춰 변동</td></tr>
+      <tr><td rowspan="4"><b>AFTER LIVE</b></td><td>드로잉쇼</td><td>20분</td>
+          <td rowspan="3">3개관 <b>로테이션</b></td></tr>
+      <tr><td>성우 토크쇼</td><td>20분</td></tr>
+      <tr><td>퀴즈쇼</td><td>20분</td></tr>
+      <tr><td>럭키드로우</td><td>5분</td><td>각 관 마지막 프로그램과 함께</td></tr>
+    </table>
+
+    <span class="kicker">AFTER LIVE 로테이션 테이블</span>
+    <table>
+      <tr><th>Time</th><th>1관</th><th>2관</th><th>3관</th></tr>
+      <tr><td>1회차</td><td>드로잉쇼</td><td>성우 토크쇼</td><td>퀴즈쇼</td></tr>
+      <tr><td>2회차</td><td>퀴즈쇼</td><td>드로잉쇼</td><td>성우 토크쇼</td></tr>
+      <tr><td>3회차</td><td>성우 토크쇼 → 럭키드로우</td><td>퀴즈쇼 → 럭키드로우</td><td>드로잉쇼 → 럭키드로우</td></tr>
+      <tr><td><b>진행자</b></td><td>황블린</td><td>앙리형</td><td>샘웨</td></tr>
+    </table>
+
+    <div class="note warn"><strong>운영 리스크</strong> &mdash; 인터미션 · 출연진 이동 시간을 고려하면
+    전체 시간이 초과된다. <b>AFTER LIVE 프로그램을 3개 → 2개로 축소</b>하는 검토가 필요하다는 것이
+    기존 기획안의 결론. 축소 시 <b>성우 토크쇼 + 드로잉쇼</b>를 남기고 퀴즈쇼는
+    BEFORE LIVE 사전투표에 통합하는 방식을 권장.</div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-head">
+    <h3 class="item">프로그램 상세</h3>
+  </div>
+  <div class="card-body">
+    <span class="kicker">① BEFORE LIVE &mdash; 웰컴 메시지</span>
+    <table>
+      <tr><td class="k">내용</td><td>행사 시작 전 사전 영상(웰컴 메시지) 루프 + 공식 방송 시작 전 10초 카운트다운</td></tr>
+      <tr><td class="k">구성</td><td>행사 타이틀 및 시작 시간 안내 / 관람 에티켓 / <b>성우 · KOL 축하 메시지</b> /
+          전용 웰컴 영상 / 사전 참여 프로그램 QR</td></tr>
+      <tr><td class="k">웰컴기프트</td><td>각 좌석 배치 &mdash; 웰컴백(종이가방), 엽서, 아크릴 티켓, 캐릭터 쿠키</td></tr>
+    </table>
+
+    <span class="kicker">② BEFORE LIVE &mdash; 사전투표 / 설문조사</span>
+    <table>
+      <tr><td class="k">방식</td><td>루프 영상 내 투표 페이지 랜딩 QR 노출 → 버전 관련 주제 투표·설문 실시</td></tr>
+      <tr><td class="k">주제</td><td>3.7 업데이트에서 가장 기대되는 요소 / 즐기고 싶은 행사 /
+          명조에 바라는 점 / <b>AFTER LIVE 관련 퀴즈</b></td></tr>
+      <tr><td class="k">추첨</td><td>일반 설문 &mdash; 행사 종료 후 추첨 / AFTER LIVE 퀴즈 &mdash; <b>현장 추첨·선물 증정</b></td></tr>
+    </table>
+
+    <span class="kicker">③ AFTER LIVE &mdash; 드로잉쇼</span>
+    <table>
+      <tr><td class="k">방식</td><td>전문 일러스트레이터가 명조 캐릭터를 현장에서 실시간 드로잉 /
+          드로잉 과정 중 <b>유저와 소통하여 반영</b></td></tr>
+      <tr><td class="k">경품</td><td>현장 드로잉 제작물로 만든 굿즈</td></tr>
+    </table>
+
+    <span class="kicker">④ AFTER LIVE &mdash; 성우 토크쇼</span>
+    <table>
+      <tr><td class="k">방식</td><td>명조 성우 출연 → 작품·캐릭터 이야기 / 현장 관람객과 함께하는 토크 및 Q&amp;A</td></tr>
+      <tr><td class="k">구성</td><td>캐릭터 비하인드 스토리 / 녹음 에피소드 / 현장 Q&amp;A / 인사 및 특별 멘트</td></tr>
+    </table>
+
+    <span class="kicker">⑤ AFTER LIVE &mdash; 퀴즈쇼 · 럭키드로우</span>
+    <table>
+      <tr><td class="k">퀴즈쇼</td><td>MC 진행 하에 <b>3.7 라이브에 포함된 내용 기반</b> 퀴즈 실시 / 한정판 경품으로 참여 유도</td></tr>
+      <tr><td class="k">럭키드로우</td><td>사전 예약번호 또는 입장 시 배부한 응모번호로 추첨 / 당첨자에게 한정 굿즈 증정</td></tr>
+    </table>
+
+    <span class="kicker">⑥ F&amp;B</span>
+    <p style="color:var(--dim);font-size:.9rem">
+    운영기획안 1차 확정 후 <b>전용 F&amp;B 판매</b> 롯데시네마 협의 필요.
+    판매 불가 시 웰컴기프트로 먹거리 배포.</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-head">
+    <h3 class="item">추가 요청 요소 &mdash; 사인회 / 코스어 / 인형탈</h3>
+    <p class="lead">기존 기획안에 미반영된 항목. 아래와 같이 배치 제안</p>
+  </div>
+  <div class="card-body">
+    <div class="grid2">
+      <figure>
+        <img src="assets/cosplay.jpg" alt="코스프레 부스 레퍼런스">
+        <figcaption>레퍼런스 · Wuthering Waves × Anime Expo 2026 하이라이트<br>
+        백드롭 배너 + 레드카펫 + 코스플레이어 &mdash; 오프라인 부스 참고안</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/luckydraw.jpg" alt="럭키드로우 경품 안내 레퍼런스">
+        <figcaption>레퍼런스 · 명조월드 in AGF 럭키드로우 경품 안내<br>
+        (운영기획안 260724 수록) &mdash; 럭키드로우 경품 구성 참고안</figcaption>
+      </figure>
+    </div>
+
+    <table>
+      <tr><th>항목</th><th>배치 위치</th><th>운영 방식</th></tr>
+      <tr><td><b>사인회</b></td><td>AFTER LIVE 종료 후 로비</td>
+          <td>성우 · 명조 관계자 참여. <b>럭키드로우 당첨자 한정</b>(관당 20~30명)으로
+          인원 통제 &mdash; 900명 전체 대상은 물리적으로 불가</td></tr>
+      <tr><td><b>여우의 별자리 코스어</b></td><td>로비 포토존 / 입장 동선</td>
+          <td>입장 시간대(BEFORE LIVE 전) 집중 배치. 포토타임 운영 &mdash; SNS 확산 자산</td></tr>
+      <tr><td><b>쇄명 코스어</b></td><td>로비 포토존 / 무대 등장</td>
+          <td>AFTER LIVE 오프닝에 짧게 무대 등장 → 관람객 환호 유도 후 로비 포토존 이동</td></tr>
+      <tr><td><b>인형탈</b></td><td>입장 동선 · 로비 상시</td>
+          <td>전 연령 소구 · 대기시간 체감 완화. <b>2인 1조 교대</b> 운영(체력 이슈) 및 케어 스태프 필수</td></tr>
+    </table>
+
+    <div class="note"><strong>동선 제안</strong> &mdash;
+    <b>입장(인형탈·코스어 포토존) → 착석(웰컴기프트·사전투표 QR) → LIVE 관람 →
+    AFTER LIVE(로테이션) → 럭키드로우 → 당첨자 사인회 → 퇴장(굿즈 수령)</b><br>
+    코스어·인형탈은 <b>입장/퇴장 동선에 배치</b>해야 900명 전원이 접점을 갖는다.
+    상영관 내부 배치는 좌석 이동이 불가해 접점이 제한적.</div>
+
+    <div class="note warn"><strong>확인 필요</strong> &mdash;
+    ① 사인회 대상 인원 · 굿즈 사전 준비 수량<br>
+    ② 코스어/인형탈 <b>대기실 및 탈의 공간</b> 극장 내 확보 가능 여부<br>
+    ③ 현장 촬영 정책 (미공개 정보 포함 가능성 → 구간별 촬영 제한 사전 협의)</div>
+  </div>
+</div>
+
+<h2 class="sec" id="s4" id="s4"><span class="num">04</span>3.7 롯데시네마 &mdash; 신규 오프라인 행사 제안</h2>
+<p class="sec-desc">3.6이 <b>&ldquo;라이브를 같이 보는 행사&rdquo;</b>였다면,
+3.7은 <b>&ldquo;극장이라는 공간을 게임 콘텐츠로 바꾸는 행사&rdquo;</b>로 차별화.
+같은 포맷 반복 시 재방문 동기가 떨어지므로, <b>극장에서만 가능한 경험</b>에 집중했습니다.</p>
+
+<div class="stage">
+  <span class="kicker">3.6 대비 3.7 차별화 전략</span>
+  <table>
+    <tr><th>구분</th><th>3.6 (기존)</th><th>3.7 (제안)</th></tr>
+    <tr><td>핵심 경험</td><td>라이브 <b>단체 관람</b> (수동적 시청)</td>
+        <td>극장 스크린 <b>참여형 플레이</b> (능동적 참여)</td></tr>
+    <tr><td>스크린 활용</td><td>방송 송출용 화면</td><td><b>거대 게임 화면 · 인터랙티브 매체</b></td></tr>
+    <tr><td>관객 역할</td><td>관람객</td><td><b>참가자 · 플레이어</b></td></tr>
+    <tr><td>주 소구층</td><td>기존 유저 (라이브 시청 목적)</td><td>기존 + <b>동반 참여자(친구·가족)</b></td></tr>
+    <tr><td>확산 축</td><td>라이브 동시 시청 화제성</td><td><b>현장 영상·짤 중심 SNS 확산</b></td></tr>
+  </table>
+</div>
+
+<div class="card">
+  <div class="card-head">
+    <span class="tag cine">3.7 CINEMA · A안</span>
+    <h3 class="item">A안 &mdash; 「명조 시네마 아레나」 <span style="color:var(--accent);font-size:.9rem">(메인 추천)</span></h3>
+    <p class="lead">극장 스크린을 대형 게임 화면으로 전환. 관객이 스마트폰으로 직접 참여하는 대회형 이벤트</p>
+  </div>
+  <div class="card-body">
+    <div class="grid2">
+      <figure>
+        <img src="assets/festival.jpg" alt="띵조 페스티벌 스케치">
+        <figcaption>레퍼런스 · 「띵조 페스티벌: 빛나는 순간, 당신과 함께」 스케치<br>
+        명조 공식 채널 · youtu.be/h-ac6EGYf6E &mdash; <b>2주년 오프라인 행사 실적</b></figcaption>
+      </figure>
+      <div>
+        <span class="kicker">기획 의도</span>
+        <ul>
+          <li>극장의 가장 큰 자산은 <b>거대 스크린 + 사운드</b> &mdash; 이걸 게임 화면으로 쓰는 게 핵심</li>
+          <li>집에서 하던 명조 전투를 <b>영화관 스케일로 체험</b>하는 경험 자체가 티켓 파워</li>
+          <li>스마트폰 실시간 투표로 <b>300명 전원이 동시 참여</b> &mdash; 관람 아닌 참여</li>
+          <li>띵킹2(온라인 대회)와 <b>오프라인-온라인 세계관 연결</b> 가능</li>
+        </ul>
+      </div>
+    </div>
+
+    <span class="kicker">프로그램 구성</span>
+    <ul class="flow">
+      <li><b>OPENING &mdash; 극장 스케일 PV 상영 (10분)</b>
+        <span>3.7 PV를 극장 음향으로 상영. 캐릭터 등장 시 조명 연출 병행.
+        <b>"이걸 보러 왔다"는 첫인상</b>을 만드는 구간</span></li>
+      <li><b>ROUND 1 &mdash; 스크린 보스 레이드 (25분)</b>
+        <span>스크린에 <b>홀로그램 보스</b> 등장 → 무대 위 KOL 3인이 실제 플레이.
+        <br>관객은 스마트폰으로 <b>실시간 전략 투표</b>(어떤 공명자를 쓸지, 어떤 스킬을 쓸지) →
+        투표 결과가 플레이어에게 전달되어 실제 조작에 반영.
+        <br><b>관객 전원이 하나의 파티가 되는 구조</b></span></li>
+      <li><b>ROUND 2 &mdash; 명조 스크린 퀴즈 배틀 (20분)</b>
+        <span>좌석 구역별(A/B/C 블록) 팀 대항. 스크린에 문제 노출 → 스마트폰 응답 →
+        실시간 순위 스크린 표시. <b>구역 대결 구조라 현장 함성 유발</b></span></li>
+      <li><b>ROUND 3 &mdash; 성우 라이브 더빙쇼 (20분)</b>
+        <span>스크린에 <b>음성을 제거한</b> 게임 시네마틱 재생 → 성우가 <b>현장에서 라이브 더빙</b>.
+        <br>극장 음향으로 듣는 라이브 더빙은 <b>온라인으로 절대 재현 불가능한 경험</b>.
+        후반부엔 관객 지목 애드립 버전으로 웃음 포인트 확보</span></li>
+      <li><b>ROUND 4 &mdash; 코스어 무대 &amp; 포토타임 (15분)</b>
+        <span>여우의 별자리 · 쇄명 코스어 무대 등장 → 스크린에 실시간 카메라 중계.
+        관객 촬영 허용 구간 명시 → <b>SNS 확산 설계 구간</b></span></li>
+      <li><b>ENDING &mdash; 럭키드로우 &amp; 3.8 티저 (10분)</b>
+        <span>응모번호 추첨 → 한정 굿즈 증정. 마지막에 <b>차기 버전 티저 최초 공개</b>로
+        마무리하면 현장 반응이 그대로 온라인 화제성으로 전환</span></li>
+    </ul>
+
+    <table>
+      <tr><td class="k">총 소요</td><td>약 100분 + 입퇴장 20분 = <b>120분</b></td></tr>
+      <tr><td class="k">규모</td><td>3개관 × 300석 (로테이션 없이 <b>전관 동시 진행</b>)</td></tr>
+      <tr><td class="k">기술 요건</td><td>스크린 게임 화면 송출 · 관객 스마트폰 투표 시스템 ·
+          무대 조명 · 무선 마이크 · 라이브 카메라</td></tr>
+      <tr><td class="k">차별점</td><td>3.6의 로테이션 방식과 달리 <b>전관 동일 프로그램</b> →
+          출연진 이동 시간 문제 해소, 운영 난이도 대폭 감소</td></tr>
+    </table>
+
+    <div class="note"><strong>운영 이점</strong> &mdash; 3.6 기획안의 최대 리스크였던
+    <b>&ldquo;로테이션 시 출연진 이동 시간 부족&rdquo;</b> 문제를 구조적으로 해결한다.
+    전관 동시 진행 + 무대 중계 방식이면 출연진은 1개 관에만 있으면 되고,
+    나머지 2개 관은 <b>실시간 중계 송출</b>로 커버 가능.</div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-head">
+    <span class="tag cine">3.7 CINEMA · B안</span>
+    <h3 class="item">B안 &mdash; 「명조 시네마 페스타」 (부스 확장형)</h3>
+    <p class="lead">상영관 안에만 머물지 않고, 극장 로비 전체를 명조 테마파크로 전환</p>
+  </div>
+  <div class="card-body">
+    <div class="grid2">
+      <figure>
+        <img src="assets/kv_main.jpg" alt="명조 공식 키비주얼">
+        <figcaption>명조 공식 키비주얼 (신규 공명자 파노라마) &copy;KURO GAMES<br>
+        로비 대형 배너 · 포토존 백드롭 참고안</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/char_01.jpg" alt="공명자 유후 공식 일러스트">
+        <figcaption>공명자 <b>유후(Youhu)</b> 공식 전신 일러스트 &copy;KURO GAMES<br>
+        등신대 · 인형탈 제작 참고안 (여우 계열 캐릭터)</figcaption>
+      </figure>
+    </div>
+
+    <span class="kicker">구성 &mdash; 로비 존 + 상영관 프로그램 2트랙</span>
+    <table>
+      <tr><th>존</th><th>내용</th><th>비고</th></tr>
+      <tr><td><b>포토 존</b></td><td>여우의 별자리 · 쇄명 코스어 상시 대기 + 등신대 · 배경 세트</td>
+          <td>입퇴장 동선에 배치</td></tr>
+      <tr><td><b>인형탈 존</b></td><td>캐릭터 인형탈 미니 퍼포먼스 · 하이터치</td>
+          <td>2인 1조 교대 운영</td></tr>
+      <tr><td><b>체험 존</b></td><td>시연 PC 5~8대 &mdash; 3.7 신규 콘텐츠 직접 플레이</td>
+          <td>비유저 동반자 대상</td></tr>
+      <tr><td><b>드로잉 존</b></td><td>일러스트레이터 현장 드로잉 &mdash; 완성작 즉석 추첨 증정</td>
+          <td>3.7 드로잉 키친과 연계</td></tr>
+      <tr><td><b>굿즈 존</b></td><td>롯데시네마 콜라보 한정 굿즈 판매 · 웰컴기프트 수령</td>
+          <td>매출 발생 지점</td></tr>
+      <tr><td><b>F&amp;B 존</b></td><td>캐릭터 테마 팝콘 · 음료 세트</td>
+          <td>롯데시네마 협의 필요</td></tr>
+    </table>
+
+    <div class="note"><strong>적용 조건</strong> &mdash; B안은 <b>로비 점유 허가</b>가 전제.
+    월드타워점은 롯데월드몰 내부라 공용 동선 이슈가 있으므로,
+    <b>극장 전용 로비 면적</b>과 <b>부스 설치 가능 여부</b>를 사전 답사에서 반드시 확인해야 한다.
+    허가가 어려우면 A안 단독 진행을 권장.</div>
+
+    <div class="note"><strong>추천</strong> &mdash;
+    <b>A안 + B안 부분 결합</b>이 최적. 상영관 안은 A안(시네마 아레나),
+    로비는 B안 중 <b>포토존 · 인형탈 · 굿즈존</b>만 축소 운영하면
+    비용 대비 체감 만족도가 가장 높다.</div>
+  </div>
+</div>
+
+<h2 class="sec" id="s5" id="s5"><span class="num">05</span>종합 타임라인 &amp; 확인 필요 사항</h2>
+<p class="sec-desc">KOL 파트와 롯데시네마 오프라인 파트를 하나의 흐름으로 합친 전체 배치안입니다.</p>
+
+<div class="card">
+  <div class="card-head">
+    <h3 class="item">전체 배치 타임라인</h3>
+    <p class="lead">3.6 → 3.7로 이어지는 콘텐츠 흐름. 공백기 없이 연결되도록 설계</p>
+  </div>
+  <div class="card-body">
+    <table>
+      <tr><th>버전</th><th>시점</th><th>콘텐츠</th><th>구분</th><th>목적</th></tr>
+      <tr><td rowspan="5" style="background:#141a24"><b>3.6</b></td>
+          <td>D-7 ~ D-DAY</td><td>애니메이션 리액션</td><td>KOL</td><td>버전 인지도 확산</td></tr>
+      <tr><td>D+3 ~ D+7</td><td>영입회</td><td>KOL</td><td>신규 유입 전환</td></tr>
+      <tr><td>D+10 ~ D+14</td><td>성우 토크쇼</td><td>KOL</td><td>팬덤 만족 · 이탈 방어</td></tr>
+      <tr><td>D+14 ~ D+21</td><td>델크쇼 시즌2</td><td>KOL</td><td>신규 정착 · 밈 확산</td></tr>
+      <tr><td><b>26/09/19</b></td><td><b>롯데시네마 단체관람 (before/after LIVE)</b></td>
+          <td><b>오프라인</b></td><td><b>3.7 라이브 동시 관람</b></td></tr>
+      <tr><td rowspan="5" style="background:#141a24"><b>3.7</b></td>
+          <td>D-7 ~ D+3</td><td>너명해 (온라인 토크쇼)</td><td>KOL</td><td>복귀 유저 재유입</td></tr>
+      <tr><td>D+3 ~ D+10</td><td>띵조를 부탁해 (드로잉 키친)</td><td>KOL</td><td>라이트 소구 · 굿즈 자산</td></tr>
+      <tr><td>D+10 ~ D+17</td><td>본사 방문 Vlog</td><td>KOL</td><td>개발사 신뢰 · 장기 리텐션</td></tr>
+      <tr><td>버전 중반</td><td><b>롯데시네마 시네마 아레나 (신규)</b></td>
+          <td><b>오프라인</b></td><td><b>참여형 오프라인 경험</b></td></tr>
+      <tr><td>D+21 ~</td><td>띵킹2 (대회)</td><td>KOL</td><td>공백기 방어 · 엔드콘텐츠</td></tr>
+    </table>
+
+    <div class="note"><strong>흐름 요약</strong> &mdash;
+    3.6은 <b>온라인 KOL 4종으로 유입 퍼널</b>을 만들고,
+    그 끝에 롯데시네마 단체관람으로 <b>3.7 라이브를 오프라인 이벤트화</b>한다.
+    3.7은 <b>제작 과정 공개 + 심화 협업</b>으로 신뢰를 쌓고,
+    시네마 아레나로 <b>오프라인 경험을 업그레이드</b>한 뒤 띵킹2로 마무리한다.</div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-head">
+    <h3 class="item">교차 연계 포인트</h3>
+    <p class="lead">콘텐츠를 개별로 두지 않고 서로 연결하면 총 효과가 커지는 지점들</p>
+  </div>
+  <div class="card-body">
+    <table>
+      <tr><th>연계</th><th>내용</th><th>기대 효과</th></tr>
+      <tr><td>영입회 → 띵킹2</td>
+          <td>영입회 피영업자(예: 탬탬버린)를 띵킹2 <b>킹티어</b>로 캐스팅</td>
+          <td>&ldquo;영업당해서 대회까지 나온&rdquo; 서사 완성 &mdash; 버전 간 스토리라인 연결</td></tr>
+      <tr><td>드로잉 키친 → 롯데시네마</td>
+          <td>온라인 드로잉 우승작을 <b>현장 증정 굿즈</b>로 제작</td>
+          <td>온라인 참여자가 오프라인 행사에 오는 동기 부여</td></tr>
+      <tr><td>성우 토크쇼 → 시네마 라이브 더빙</td>
+          <td>온라인 토크쇼 출연 성우가 <b>극장 라이브 더빙쇼</b>에 재출연</td>
+          <td>섭외 리소스 재활용 + &ldquo;직접 보러 가는&rdquo; 전환 유도</td></tr>
+      <tr><td>본사 방문 → 성우 토크쇼</td>
+          <td>본사 <b>녹음실 탐방</b> 장면과 성우 녹음 비하인드를 소재로 연결</td>
+          <td>제작 과정 서사의 일관성 확보</td></tr>
+      <tr><td>애니메이션 → 2차 창작 → 굿즈</td>
+          <td>애니 2차 창작 챌린지 우수작을 <b>오프라인 전시</b></td>
+          <td>커뮤니티 기여자 인정 → 코어 팬덤 결속</td></tr>
+      <tr><td>롯데시네마 → 3.8 티저</td>
+          <td>현장 엔딩에서 <b>차기 버전 티저 최초 공개</b></td>
+          <td>현장 반응이 그대로 온라인 화제성으로 전환</td></tr>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-head">
+    <h3 class="item">확인 · 결정 필요 사항</h3>
+    <p class="lead">브레인스토밍 이후 실무 확정이 필요한 항목</p>
+  </div>
+  <div class="card-body">
+    <span class="kicker">KOL 파트</span>
+    <table>
+      <tr><th>항목</th><th>내용</th><th>리드타임</th></tr>
+      <tr><td>성우 섭외</td><td>소속사 스케줄 · 초상권/음원 사용 범위 · 재연 가능 대사 범위</td>
+          <td><b>6~8주</b> (최장)</td></tr>
+      <tr><td>미공개 테이크</td><td>녹음 원본 공개 여부 &mdash; 개발사(쿠로) 승인 필수</td><td>4주</td></tr>
+      <tr><td>리액션 저작권</td><td>영상 사용 길이 · 화면 비율 · 수익화 정책 → <b>공식 가이드 1장 배포</b></td><td>2주</td></tr>
+      <tr><td>본사 방문</td><td>비자 · 촬영 허가 · 보안구역 구분 · <b>사전 질문 리스트 승인</b></td><td><b>6주</b></td></tr>
+      <tr><td>띵킹2 캐스팅</td><td>팀장/띵티어/킹티어 각 5~6인 확정 · 중계진 3인 스케줄</td><td>4주</td></tr>
+      <tr><td>단가 협의</td><td>기 확보 단가 &mdash; 다주 BDC 1,600만 / 서넹 500만 / 채현찌 1,000만 (VAT·거마비 별도)</td>
+          <td>&mdash;</td></tr>
+    </table>
+
+    <span class="kicker">롯데시네마 오프라인 파트</span>
+    <table>
+      <tr><th>항목</th><th>내용</th><th>담당</th></tr>
+      <tr><td>AFTER LIVE 축소</td><td>3개 프로그램 → <b>2개 축소 여부 결정</b> (인터미션·이동시간 초과 이슈)</td>
+          <td>운영</td></tr>
+      <tr><td>사인회 규모</td><td>대상 인원 확정 (럭키드로우 당첨자 한정 권장) · 굿즈 사전 수량</td><td>운영</td></tr>
+      <tr><td>코스어/인형탈</td><td><b>대기실 · 탈의 공간</b> 극장 내 확보 가능 여부</td><td>롯데시네마 협의</td></tr>
+      <tr><td>F&amp;B</td><td>전용 F&amp;B 판매 가능 여부 &mdash; 불가 시 웰컴기프트 먹거리 대체</td><td>롯데시네마 협의</td></tr>
+      <tr><td>촬영 정책</td><td>미공개 정보 포함 구간 <b>촬영 제한</b> 사전 고지 방안</td><td>운영</td></tr>
+      <tr><td>3.7 로비 사용</td><td>B안 진행 시 <b>로비 점유 허가</b> · 부스 설치 면적 (사전 답사 필수)</td><td>롯데시네마 협의</td></tr>
+      <tr><td>투표 시스템</td><td>A안 관객 스마트폰 실시간 투표 시스템 구축 (300명 × 3관 동시 부하)</td><td>기술</td></tr>
+    </table>
+
+    <div class="note warn"><strong>자료 접근 이슈</strong> &mdash;
+    Feishu 위키 문서 4건(3.6/3.7 KOL 시트, 장기 협업 프로세스, 3.6 롯데시네마 시트)은
+    <b>로그인 권한이 없어 열람하지 못했습니다.</b> 본 기획안은
+    ① 인챈트 제작 콘텐츠 기획안 PDF ② 롯데시네마 단체관람 운영기획안 PDF(260724)
+    ③ 드로잉 키친 진행안 ④ 다주 크리에이터 협업 기획안 ⑤ 영입회·델크쇼 유튜브 레퍼런스를
+    근거로 작성했습니다. Feishu 시트 내용을 공유해 주시면 해당 부분을 보강하겠습니다.</div>
+  </div>
+</div>
+
+<div style="margin-top:50px;padding-top:24px;border-top:1px solid var(--line);
+  color:var(--dim);font-size:.83rem;line-height:1.8">
+  <p><b>출처 및 근거 자료</b></p>
+  <p>· [인챈트] 명조 제작 콘텐츠 기획안 (공유용) &mdash; 띵킹2 기획 내용<br>
+  · 명조 롯데시네마 단체관람1 (라이브) 운영기획안 260724 &mdash; 3.6 오프라인 확정안<br>
+  · 드로잉 쇼 「띵조를 부탁해」 진행안 (Google Docs)<br>
+  · [인챈트] 명조: 워더링 웨이브 크리에이터 협업 콘텐츠 기획안 &mdash; 다주 본사 방문<br>
+  · 영입회 레퍼런스: youtube.com/watch?v=J45wT1il29U (탬탬버린)<br>
+  · 델크쇼 레퍼런스: youtube.com/watch?v=YxPgWtUWfKs (델롱락국)<br>
+  · 성우 토크쇼 레퍼런스: youtu.be/E2whROUxDz8 (명조 2주년 페스티벌 성우 토크쇼 / 채널 블류)<br>
+  · 띵킹 1회차: youtu.be/2b0mlTRKJjM (국내 최초 명조대회 「띵킹」 하이라이트 / 채널 명떡)<br>
+  · 본사 방문 레퍼런스: youtu.be/PYZPlDI2Qh4 (쿠로게임즈 본사 초청 방문 후기 / 채널 박서림)<br>
+  · 애니메이션: youtu.be/NH-NCf_SueU (애니메이션 시리즈 「엘리시움」 제작 확정 PV / 공식)<br>
+  · 띵조 페스티벌: youtu.be/h-ac6EGYf6E (「빛나는 순간, 당신과 함께」 스케치 / 공식)<br>
+  · 키비주얼 · 공명자 유후 일러스트: wutheringwaves.kurogames.com &copy;KURO GAMES<br>
+  · 오프라인 부스: Wuthering Waves × Anime Expo 2026 하이라이트 (공식)</p>
+  <p style="margin-top:14px">※ 본 문서 내 이미지는 기획 참고용 레퍼런스이며 각 저작권은 원 저작권자에 있습니다.</p>
+</div>
+
+</div><!-- /wrap -->
+</body>
+</html>
+
+</div>
+</body>
+</html>
